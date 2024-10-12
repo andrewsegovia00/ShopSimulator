@@ -1,5 +1,9 @@
 package com.shopsimulator.shopsimulator.entity;
 
+public class Bnous {
+}
+package com.backend.springbootfirebase.entity;
+
 public class Bonus {
 
     private String name;
