@@ -34,3 +34,6 @@ build/
 
 # .env document
 .env
+
+src/main/resources/servicekey.json
+servicekey.json

@@ -15,10 +15,10 @@ public class ShopsimulatorApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**")  // Allow all paths
-						.allowedOrigins("http://localhost:3000")  // Allow this origin (React app)
-						.allowedMethods("GET", "POST", "DELETE", "PATCH")  // Allow specific HTTP methods
-						.allowedHeaders("*");  // Allow all headers
+				registry.addMapping("/**")
+						.allowedOrigins("http://localhost:3000")
+						.allowedMethods("GET", "POST", "DELETE", "PATCH")
+						.allowedHeaders("*");
 			}
 		};
 	}

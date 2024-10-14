@@ -1,15 +1,16 @@
-package com.backend.springbootfirebase.entity;
+package com.shopsimulator.shopsimulator.entity;
+import org.springframework.stereotype.Service;
+
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class Employee {
 
     private String name;
     private int id;
     private String description;
-    //    List<empBonus> empBonus;
-//    List<empBonus> empClash;
     private List<String> bonusIds;
     private List<String> likedEmployeeIds;
     private List<String> dislikedEmployeeIds;
@@ -21,7 +22,6 @@ public class Employee {
         this.bonusIds = new ArrayList<>();
         this.likedEmployeeIds = new ArrayList<>();
         this.dislikedEmployeeIds = new ArrayList<>();
-
     }
 
     public String getName() {
