@@ -1,11 +1,11 @@
 package com.shopsimulator.shopsimulator.entity;
-import org.springframework.stereotype.Service;
+//import org.springframework.stereotype.Service;
 
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
+//@Service
 public class Employee {
 
     private String name;
