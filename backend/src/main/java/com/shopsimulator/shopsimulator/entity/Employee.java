@@ -12,6 +12,8 @@ public class Employee {
     private List<String> likedEmployeeIds;
     private List<String> dislikedEmployeeIds;
 
+    public Employee (){}
+
     public Employee(String name, int empId, String empDescription) {
         this.name = name;
         this.id = empId;
