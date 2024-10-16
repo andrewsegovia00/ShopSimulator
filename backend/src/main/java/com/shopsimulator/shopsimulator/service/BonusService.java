@@ -31,11 +31,11 @@ public class BonusService {
         return collectionApiFuture.get().getUpdateTime().toString();
     }
 
-    public String deleteBonus(String bonus) throws Exception, InterruptedException {
+    public String deleteBonus(String bonus) throws ExecutionException, InterruptedException {
         Firestore db = FirestoreClient.getFirestore();
 
         ApiFuture<WriteResult> documentApiFuture = db.collection(BONUS_COLLECTION).document(bonus).delete();
-        return "Bonus " + " has beene removed from the database";
+        return "Bonus " + bonus + " has been removed from the database";
     }
 
     public Bonus getBonusDetails(String name) throws ExecutionException, InterruptedException {
@@ -74,7 +74,7 @@ public class BonusService {
 
            DocumentSnapshot document = future.get();
 
-           bonus = document.toObject((Bonus.class));
+           bonus = document.toObject(Bonus.class);
            bonusList.add(bonus);
        }
        return bonusList;

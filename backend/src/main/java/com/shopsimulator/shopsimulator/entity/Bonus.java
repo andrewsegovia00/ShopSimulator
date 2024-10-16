@@ -7,6 +7,8 @@ public class Bonus {
     private String description;
     private double percentage;
 
+    public Bonus(){}
+
     public Bonus(String id, String name, String description, double percentage) {
         this.id = id;
         this.name= name;
