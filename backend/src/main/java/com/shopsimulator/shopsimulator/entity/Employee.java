@@ -1,11 +1,8 @@
 package com.shopsimulator.shopsimulator.entity;
-//import org.springframework.stereotype.Service;
-
-import java.sql.Array;
+import com.google.cloud.firestore.DocumentReference;
 import java.util.ArrayList;
 import java.util.List;
 
-//@Service
 public class Employee {
 
     private String name;
