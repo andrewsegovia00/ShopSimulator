@@ -1,9 +1,6 @@
 package com.shopsimulator.shopsimulator.service;
 import com.google.api.core.ApiFuture;
-import com.google.cloud.firestore.DocumentReference;
-import com.google.cloud.firestore.DocumentSnapshot;
-import com.google.cloud.firestore.Firestore;
-import com.google.cloud.firestore.WriteResult;
+import com.google.cloud.firestore.*;
 import com.google.firebase.cloud.FirestoreClient;
 import com.shopsimulator.shopsimulator.entity.Employee;
 import org.springframework.stereotype.Service;
@@ -16,7 +13,6 @@ import java.util.concurrent.ExecutionException;
 public class EmployeeService {
 
     public static  final String EMPLOYEE_COLLECTION_NAME = "EMPLOYEE";
-    public static final String BONUS_COLLECTION_NAME = "BONUS";
 
     public String saveEmployee(Employee employee) throws ExecutionException, InterruptedException {
         Firestore db = FirestoreClient.getFirestore();
@@ -41,11 +37,11 @@ public class EmployeeService {
 
         ApiFuture <DocumentSnapshot> futurePromise = employeeReference.get();
 
-        DocumentSnapshot empInfoFromDB = futurePromise.get();
+        DocumentSnapshot document = futurePromise.get();
 
         Employee currentEmployee = null;
-        if(empInfoFromDB.exists()) {
-            currentEmployee = empInfoFromDB.toObject(Employee.class);
+        if(document.exists()) {
+            currentEmployee = document.toObject(Employee.class);
             return currentEmployee;
         } else {
             return null;
@@ -77,6 +73,4 @@ public class EmployeeService {
         }
         return employeeList;
     }
-
-
 }

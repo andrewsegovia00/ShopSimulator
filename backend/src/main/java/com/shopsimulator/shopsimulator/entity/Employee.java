@@ -6,7 +6,7 @@ import java.util.List;
 public class Employee {
 
     private String name;
-    private int id;
+    private String id;
     private String description;
     private List<String> bonusIds;
     private List<String> likedEmployeeIds;
@@ -14,7 +14,7 @@ public class Employee {
 
     public Employee (){}
 
-    public Employee(String name, int empId, String empDescription) {
+    public Employee(String name, String empId, String empDescription) {
         this.name = name;
         this.id = empId;
         this.description = empDescription;
@@ -31,11 +31,11 @@ public class Employee {
         this.name = name;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
