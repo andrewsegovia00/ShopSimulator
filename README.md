@@ -4,6 +4,13 @@
 <li>Pair them with the right co-worker and their synergy will apply an extra bonus!</li>
 <li>Each day you can choose whether to repay your initial investment, or gamble your profit for a sale multiplier!</li>
 </ul>
+<h2>Technology Information</h2>
+<ul>
+<li><strong>Backend:</strong> CRUD fully built with Java & Springboot
+<li><strong>Database:</strong> Firestore & Authentication w/ Firebase
+<li><strong>Frontend:</strong> React Hooks & Design w/ React & Bootstrap
+<li><strong>Hosting:</strong> Using AWS(Beanstalk / EC2 Instances) for cheap deployment
+</ul>
 <br/>
 <table>
 <tr>
