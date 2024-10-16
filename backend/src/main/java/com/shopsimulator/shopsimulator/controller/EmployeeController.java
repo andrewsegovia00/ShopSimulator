@@ -1,10 +1,8 @@
 package com.shopsimulator.shopsimulator.controller;
-
 import com.shopsimulator.shopsimulator.entity.Employee;
 import com.shopsimulator.shopsimulator.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
