@@ -7,17 +7,17 @@ const Navigationbar =  () => {
     
     return(
         <>
-            <Navbar bg="primary" variant="dark">
-                <Container>
-                    <Navbar.Brand as={Link} to="/">
-                        <strong>Run your Business</strong>
-                    </Navbar.Brand>
-                    <Nav className="ml-auto">
-                        <Nav.Link as={Link} to="/dashboard" className="nav-link">Dashboard</Nav.Link>
-                        <Nav.Link as={Link} to="/addEmployee" className="nav-link">Add Employee</Nav.Link>
-                    </Nav>
-                </Container>
-            </Navbar>
+        <Navbar bg="dark" variant="dark">
+            <Container justify>
+                <Navbar.Brand as={Link} to="/">
+                    <strong>Shop Simulator</strong>
+                </Navbar.Brand>
+                <Nav >
+                    <Nav.Link as={Link} to="/dashboard" className="nav-link">How to Play</Nav.Link>
+                    <Nav.Link as={Link} to="/addEmployee" className="nav-link">Bonuses</Nav.Link>
+                </Nav>
+            </Container>
+        </Navbar>
         </>
         
     )
