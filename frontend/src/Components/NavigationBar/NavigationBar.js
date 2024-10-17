@@ -10,7 +10,7 @@ const Navigationbar =  () => {
         <Navbar bg="dark" variant="dark">
             <Container justify>
                 <Navbar.Brand as={Link} to="/">
-                    <strong>Shop Simulator</strong>
+                    <strong>Cat Shop Simulator</strong>
                 </Navbar.Brand>
                 <Nav >
                     <Nav.Link as={Link} to="/dashboard" className="nav-link">How to Play</Nav.Link>
